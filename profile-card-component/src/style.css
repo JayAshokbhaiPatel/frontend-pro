@@ -23,16 +23,57 @@
 /* write your CSS here */
 
 body {
-  /* How to Do 3 Gradient in One Property */
-  /* background: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(237, 187, 255, 0.6) 0%,
-      rgba(237, 187, 255, 0) 100%
-    )
-    radial-gradient(50% 50% at 50% 50%, #c6fcff 0%, rgba(198, 252, 255, 0) 100%)
-    radial-gradient(50% 50% at 50% 50%, #ffddb6 0%, rgba(255, 221, 182, 0) 100%); */
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   font-family: var(--common-font-family);
 }
+
+/* .circle1 {
+  position: absolute;
+  bottom: 160px;
+  left: 340px;
+  top: 9px;
+  z-index: -1;
+  color: yellow;
+  width: 560px;
+  height: 560px;
+  border-radius: 360px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #c6fcff 0%,
+    rgba(198, 252, 255, 0) 100%
+  );
+} */
+
+/* .circle2 {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  left: -60px;
+  top: 20px;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(237, 187, 255, 0.6) 0%,
+    rgba(237, 187, 255, 0) 100%
+  );
+} */
+
+/* .circle3 {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  left: 720px;
+  top: 20px;
+  z-index: -1;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffddb6 0%,
+    rgba(255, 221, 182, 0) 100%
+  );
+} */
 
 main {
   display: flex;
@@ -48,6 +89,7 @@ main {
   border: 20px solid var(--clr-white);
   border-radius: var(--card-border-radius);
   background-color: var(--card-background);
+  padding: 30px;
   max-width: 992px;
 }
 
