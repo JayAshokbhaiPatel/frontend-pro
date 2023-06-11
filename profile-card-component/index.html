@@ -4,11 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/src/style.css" />
     <title>Profile Card Component - FrontendPro Challenge</title>
   </head>
   <body>
     <!-- Write your HTML here -->
+    <main>
+      <section class="user-profile-card">
+        <!-- Left Section -->
+        <div class="avatar-container">
+          <img src="src/Profile Picture.png" alt="user-image" />
+        </div>
+        <div>
+          <!-- Right Section -->
+          <div class="user-details">
+            <h1 class="name">John Deo</h1>
+            <h5 class="occupation text-styles">Frontend Developer</h5>
+            <p class="text-styles">
+              Passionate frontend developer with expertise in HTML, CSS,
+              JavaScript, and React.
+            </p>
+          </div>
+
+          <div class="stats">
+            <div class="text-styles-2">
+              <p>1999</p>
+              <span>Followers</span>
+            </div>
+            <div class="text-styles-2">
+              <p>190</p>
+              <span>Following</span>
+            </div>
+            <div class="text-styles-2">
+              <p>15</p>
+              <span>Projects</span>
+            </div>
+          </div>
+
+          <div class="action-container">
+            <button class="btn teal-bg text-styles-2" type="button">
+              Follow
+            </button>
+            <button class="btn yellow-bg text-styles-2" type="button">
+              View Profile
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="/src/script.js"></script>
   </body>

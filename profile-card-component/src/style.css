@@ -1,3 +1,19 @@
+:root {
+  --clr-white: "#fff";
+  --card-background: "rgba(255, 255, 255, 0.7)";
+  --card-border-radius: 30px;
+  --avatar-border-radius: 125px;
+  --grey1: #e6e6e6;
+  --text-color: #141843;
+  --faded-text-color: #5f627a;
+  --teal-button-color: #aef1f5;
+  --yellow-button-color: #ffddb6;
+  --common-font-family: "Poppins", sans-serif;
+  --fw-500: 500;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,3 +21,112 @@
 }
 
 /* write your CSS here */
+
+body {
+  /* How to Do 3 Gradient in One Property */
+  /* background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(237, 187, 255, 0.6) 0%,
+      rgba(237, 187, 255, 0) 100%
+    )
+    radial-gradient(50% 50% at 50% 50%, #c6fcff 0%, rgba(198, 252, 255, 0) 100%)
+    radial-gradient(50% 50% at 50% 50%, #ffddb6 0%, rgba(255, 221, 182, 0) 100%); */
+  font-family: var(--common-font-family);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-profile-card {
+  display: flex;
+  gap: 2.5rem;
+  margin-inline: 1rem;
+  border: 20px solid var(--clr-white);
+  border-radius: var(--card-border-radius);
+  background-color: var(--card-background);
+  max-width: 992px;
+}
+
+@media screen and (max-width: 900px) {
+  .user-profile-card {
+    flex-wrap: wrap;
+  }
+}
+
+.avatar-container {
+  border: 10px solid var(--grey1);
+  border-radius: var(--avatar-border-radius);
+  width: 270px;
+  height: 270px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.name {
+  line-height: 1.25;
+  color: var(--text-color);
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+.text-styles {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: var(--fw-400);
+}
+
+.occupation {
+  color: var(--faded-text-color);
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2.5rem;
+}
+
+.text-styles-2 {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: var(--fw-500);
+}
+
+.stats > div {
+  flex-basis: 25%;
+}
+
+.stats > div:not(:last-child) {
+  border-right: 1px solid var(--text-color);
+}
+
+.action-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.btn {
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  padding-block: 1rem;
+  width: 10rem;
+}
+
+.teal-bg {
+  background-color: var(--teal-button-color);
+}
+
+.yellow-bg {
+  background-color: var(--yellow-button-color);
+}
